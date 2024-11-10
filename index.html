@@ -6,36 +6,42 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/reset.css">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
   <main>
+    <div class="star-container">
+      <img src="./images/icon-star.svg" alt="star" class="star">
+    </div>
     <h1>How did we do?</h1>
     <p>
       Please let us know how we did with your support request. 
       All feedback is appreciated 
       to help us improve our offering!
     </p>
+    <br>
     <form action="rating">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
-
-      <input type="submit" name="submit" value="Submit">
+      <div class="rate-container">
+        <span class="rate-buttons">1</span>
+        <span class="rate-buttons">2</span>
+        <span class="rate-buttons">3</span>
+        <span class="rate-buttons">4</span>
+        <span class="rate-buttons">5</span>
+      </div>
+      <br>
+      <div>
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+      </div>
     </form>
-
-    You selected <!-- Add rating here --> out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
   </main>
 
 <script src="./index.js"></script>

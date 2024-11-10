@@ -5,3 +5,37 @@
     --DarkBlue: hsl(213, 19%, 18%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
 }
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 0.94rem;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+}
+main {
+    border: 2px solid brown;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--DarkBlue);
+    color: var(--White);
+}
+
+/* Image components */
+.star {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: var(--LightGrey);
+    opacity: 0.5;
+}
+
+
+/* Buttons section */
+.rate-buttons {
+    border-radius: 50%;
+    padding: 0.7rem 1rem;
+    margin-right: 1rem;
+    background-color: var(--LightGrey);
+    opacity: 0.2;
+}
