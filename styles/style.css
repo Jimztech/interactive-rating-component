@@ -21,13 +21,21 @@ main {
     background-color: var(--DarkBlue);
     color: var(--White);
 }
+.heading {
+    margin-top: 0.5rem;
+}
 
 /* Image components */
 .star {
+    position: relative;
+    z-index: 1;
+}
+.star-container {
+    margin: 0.8rem 1.8rem 0 0;  
     border-radius: 50%;
-    padding: 8px;
-    background-color: var(--LightGrey);
-    opacity: 0.5;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.1);
+    display: inline-block;
 }
 
 
@@ -38,4 +46,12 @@ main {
     margin-right: 1rem;
     background-color: var(--LightGrey);
     opacity: 0.2;
+}
+#submit {
+    margin: 0.8rem 0.5rem 0 0;
+    padding: 0.7rem 8rem;
+}
+.submit-button {
+    display: grid;
+    place-items: center;
 }
