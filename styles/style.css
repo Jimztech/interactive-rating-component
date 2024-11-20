@@ -23,6 +23,7 @@ main {
 }
 .heading {
     margin-top: 0.5rem;
+    font-weight: 400;
 }
 p {
     opacity: 0.7;
@@ -85,4 +86,29 @@ p {
 .submit-button {
     display: grid;
     place-items: center;
+}
+
+
+/*Js content*/
+.second-header {
+    text-align: center;
+    margin: 1.3rem 0 0.5rem 0;
+    font-weight: 400;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+.rate-info-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+    border: 2px solid brown;
+}
+.rate-info {
+    color: var(--Orange);
+    opacity: 0.7;
+}
+.p-tag {
+    text-align: center;
 }
