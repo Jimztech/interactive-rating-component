@@ -36,8 +36,8 @@ function newContent(event) {
         </div>
         <h1 class="second-header">Thank you!</h1>
         <p class="p-tag">
-            We appreciate you taking the time to give a rating.
-            If you ever need more support, don't hesitate 
+            We appreciate you taking the time to give a <br>rating.
+            If you ever need more support, don't <br>hesitate 
             to get in touch!
         </p>
     `
