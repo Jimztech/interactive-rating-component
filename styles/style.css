@@ -70,6 +70,13 @@ p {
 .rate-buttons:hover {
     background-color: var(--Orange);
 }
+.rate-buttons {
+    color: white;
+}
+.rate-buttons.selected {
+    background-color: var(--White);
+    color: var(--VeryDarkBlue);
+}
 #submit {
     margin: 0.8rem 0.5rem 0 0;
     padding: 0.7rem 8rem;
@@ -103,9 +110,12 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 1.3rem;
-    border: 2px solid brown;
+
 }
 .rate-info {
+    border-radius: 1.2rem;
+    background-color: rgba(211, 211, 211, 0.2);
+    padding: 0.5rem;
     color: var(--Orange);
     opacity: 0.7;
 }

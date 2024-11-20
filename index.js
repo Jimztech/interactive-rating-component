@@ -1,7 +1,28 @@
 const submitBtn = document.getElementById("submit");
 const main = document.getElementById("main");
+const rateButtons = document.querySelectorAll(".rate-buttons");
 
-function newContent() {
+let selectedRating = null;
+
+rateButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        rateButtons.forEach(btn => btn.classList.remove('selected'));
+        this.classList.add('selected');
+
+        selectedRating = this.textContent;
+    })
+});
+
+
+
+function newContent(event) {
+    event.preventDefault();
+
+    if(!selectedRating) {
+        alert("Please select a rating before submitting!");
+        return;
+    }
+
     main.innerHTML = `
         <div class="image-container">
             <img 
@@ -11,7 +32,7 @@ function newContent() {
             />
         </div>
         <div class="rate-info-container">
-            <span class="rate-info">You selected</span>
+            <span class="rate-info">You selected ${selectedRating} out of 5</span>
         </div>
         <h1 class="second-header">Thank you!</h1>
         <p class="p-tag">
