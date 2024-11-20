@@ -122,3 +122,9 @@ p {
 .p-tag {
     text-align: center;
 }
+
+
+/* Desktop design */
+.submit-button {
+    margin-bottom: 0.8rem;
+}
